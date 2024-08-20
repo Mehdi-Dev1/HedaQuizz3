@@ -1,7 +1,174 @@
 import React, { useState, useEffect } from 'react';
 
 const questionsData = [
-  
+  {
+    "id": 1,
+    "question": "Quel est le poids moyen à la naissance pour un nouveau-né à terme?",
+    "options": ["3,5 kg", "2,5 kg", "4,5 kg", "5 kg"],
+    "answer": "3,5 kg"
+  },
+  {
+    "id": 2,
+    "question": "Quelle est la fréquence respiratoire normale d'un nouveau-né?",
+    "options": ["40-60 respirations/min", "20-30 respirations/min", "10-20 respirations/min", "60-80 respirations/min"],
+    "answer": "40-60 respirations/min"
+  },
+  {
+    "id": 3,
+    "question": "Quel est le signe clinique principal d'une infection néonatale?",
+    "options": ["Fièvre", "Hypotension", "Hyperglycémie", "Cyanose"],
+    "answer": "Fièvre"
+  },
+  {
+    "id": 4,
+    "question": "Quel est le score d'Apgar minimal indiquant une bonne adaptation à la vie extra-utérine?",
+    "options": ["7", "5", "3", "10"],
+    "answer": "7"
+  },
+  {
+    "id": 5,
+    "question": "Quelle est la durée de la période néonatale?",
+    "options": ["28 jours", "14 jours", "7 jours", "42 jours"],
+    "answer": "28 jours"
+  },
+  {
+    "id": 6,
+    "question": "Quel est le traitement initial de la détresse respiratoire néonatale?",
+    "options": ["Oxygénothérapie", "Antibiothérapie", "Diurétique", "Réhydratation"],
+    "answer": "Oxygénothérapie"
+  },
+  {
+    "id": 7,
+    "question": "Quel est le paramètre le plus important à surveiller chez un nouveau-né en couveuse?",
+    "options": ["Température corporelle", "Fréquence cardiaque", "Saturation en oxygène", "Pression artérielle"],
+    "answer": "Température corporelle"
+  },
+  {
+    "id": 8,
+    "question": "Quel est le facteur de risque principal de l'hyperbilirubinémie néonatale?",
+    "options": ["Prématurité", "Macrosomie", "Hypoglycémie", "Apnée"],
+    "answer": "Prématurité"
+  },
+  {
+    "id": 9,
+    "question": "Quel est le traitement principal de l'hyperbilirubinémie sévère?",
+    "options": ["Photothérapie", "Antibiothérapie", "Réhydratation", "Transfusion sanguine"],
+    "answer": "Photothérapie"
+  },
+  {
+    "id": 10,
+    "question": "Quel est le temps de jeûne recommandé avant une chirurgie pour un enfant de moins de 6 mois?",
+    "options": ["4 heures", "2 heures", "6 heures", "8 heures"],
+    "answer": "4 heures"
+  },
+  {
+    "id": 11,
+    "question": "Quel est le principal signe d'une déshydratation modérée chez un enfant?",
+    "options": ["Muqueuses sèches", "Fièvre", "Somnolence", "Cyanose"],
+    "answer": "Muqueuses sèches"
+  },
+  {
+    "id": 12,
+    "question": "Quel est le mode de transmission principal du rotavirus chez l'enfant?",
+    "options": ["Fécal-oral", "Aérien", "Contact direct", "Contact sanguin"],
+    "answer": "Fécal-oral"
+  },
+  {
+    "id": 13,
+    "question": "Quel est le pourcentage de perte de poids normal chez un nouveau-né dans les premiers jours?",
+    "options": ["5-10%", "1-3%", "10-15%", "15-20%"],
+    "answer": "5-10%"
+  },
+  {
+    "id": 14,
+    "question": "Quel est le signe d'une hypoglycémie néonatale?",
+    "options": ["Tremblements", "Cyanose", "Diarrhée", "Fièvre"],
+    "answer": "Tremblements"
+  },
+  {
+    "id": 15,
+    "question": "Quelle est la première action à prendre en cas d'ictère chez un nouveau-né?",
+    "options": ["Dosage de la bilirubine", "Mise en couveuse", "Surveillance de la température", "Administration d'antibiotiques"],
+    "answer": "Dosage de la bilirubine"
+  },
+  {
+    "id": 16,
+    "question": "Quelle est la période la plus critique pour un prématuré?",
+    "options": ["Les premières 48 heures", "La première semaine", "Le premier mois", "Les premiers 6 mois"],
+    "answer": "Les premières 48 heures"
+  },
+  {
+    "id": 17,
+    "question": "Quel est le traitement de première intention pour une pneumonie néonatale?",
+    "options": ["Antibiothérapie", "Corticothérapie", "Oxygénothérapie", "Ventilation assistée"],
+    "answer": "Antibiothérapie"
+  },
+  {
+    "id": 18,
+    "question": "Quel est le signe clinique d'une bronchiolite sévère chez un nourrisson?",
+    "options": ["Tirage intercostal", "Cyanose", "Tachycardie", "Fièvre"],
+    "answer": "Tirage intercostal"
+  },
+  {
+    "id": 19,
+    "question": "Quelle est la complication la plus fréquente d'une infection urinaire chez l'enfant?",
+    "options": ["Pyélonéphrite", "Cystite", "Prostatite", "Urétérite"],
+    "answer": "Pyélonéphrite"
+  },
+  {
+    "id": 20,
+    "question": "Quel est le traitement recommandé pour une otite moyenne aiguë chez l'enfant?",
+    "options": ["Antibiothérapie", "Anti-inflammatoire", "Corticothérapie", "Chirurgie"],
+    "answer": "Antibiothérapie"
+  },
+  {
+    "id": 21,
+    "question": "Quel est le risque principal d'une bronchiolite non traitée?",
+    "options": ["Insuffisance respiratoire", "Pneumonie", "Infection systémique", "Déshydratation"],
+    "answer": "Insuffisance respiratoire"
+  },
+  {
+    "id": 22,
+    "question": "Quelle est la cause la plus fréquente de convulsions fébriles chez l'enfant?",
+    "options": ["Infection virale", "Traumatisme crânien", "Infection bactérienne", "Intoxication"],
+    "answer": "Infection virale"
+  },
+  {
+    "id": 23,
+    "question": "Quel est le signe d'une déshydratation sévère chez un nourrisson?",
+    "options": ["Fontanelle déprimée", "Somnolence", "Irritabilité", "Cyanose"],
+    "answer": "Fontanelle déprimée"
+  },
+  {
+    "id": 24,
+    "question": "Quel est le traitement initial d'une gastro-entérite aiguë chez l'enfant?",
+    "options": ["Réhydratation orale", "Antibiothérapie", "Antidiarrhéiques", "Corticothérapie"],
+    "answer": "Réhydratation orale"
+  },
+  {
+    "id": 25,
+    "question": "Quel est le signe clinique principal d'une méningite chez l'enfant?",
+    "options": ["Raideur de la nuque", "Somnolence", "Vomissements", "Éruption cutanée"],
+    "answer": "Raideur de la nuque"
+  },
+  {
+    "id": 26,
+    "question": "Quel est le traitement de première intention pour une méningite bactérienne chez l'enfant?",
+    "options": ["Antibiothérapie", "Corticothérapie", "Antiviraux", "Réhydratation"],
+    "answer": "Antibiothérapie"
+  },
+  {
+    "id": 27,
+    "question": "Quelle est la durée recommandée d'allaitement exclusif selon l'OMS?",
+    "options": ["6 mois", "3 mois", "9 mois", "12 mois"],
+    "answer": "6 mois"
+  },
+  {
+    "id": 28,
+    "question": "Quel est le facteur de risque principal pour une infection néonatale?",
+    "options": ["Rupture prolongée des membranes", "Accouchement par césarienne", "Prématurité", "Macrosomie"],
+    "answer": "Rupture prolongée des membranes"
+  },
 ];
 
 const Quiz = () => {
