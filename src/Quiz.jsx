@@ -1029,7 +1029,7 @@ const questionsData = [
       "Filtrer les déchets et équilibrer les fluides corporels"
     ],
     "answer": "Filtrer les déchets et équilibrer les fluides corporels"
-  }
+  },
   {
     "id": 100,
     "question": "Quel est le rôle principal des glandes parathyroïdes?",
@@ -1047,12 +1047,6 @@ const questionsData = [
     "question": "Quelle est la principale fonction des côtes?",
     "options": ["Combattre les infections", "Transporter l'oxygène", "Filtrer le sang", "Protéger les organes thoraciques comme le cœur et les poumons"],
     "answer": "Protéger les organes thoraciques comme le cœur et les poumons"
-  },
-  {
-    "id": 103,
-    "question": "Quel est le principal rôle des glandes parotides?",
-    "options": ["Combattre les infections", "Filtrer le sang", "Produire la salive", "Produire des globules rouges"],
-    "answer": "Produire la salive"
   },
   {
     "id": 104,
