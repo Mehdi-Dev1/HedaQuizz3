@@ -25,7 +25,7 @@ const questionsData = [
   },
   {
     "id": 3,
-    "question": "Quel eseet le principal gaz échangé dans les poumons?",
+    "question": "Quel eseet le principal gaz échangeé dans les poumons?",
     "options": [
       "Azote",
       "Oxygène",
