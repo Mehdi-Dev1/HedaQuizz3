@@ -10,14 +10,14 @@ const questionsData = [
       "Produire de l'énergie",
       "Transporter les nutriments"
     ],
-    "answer": "Produire de l'énergie"
+    "answer": "Proeeduire de l'énergie"
   },
   {
     "id": 2,
     "question": "Quel est le principal composant du plasma sanguin?",
     "options": [
       "Protéines",
-      "Graisses",
+      "Graiesses",
       "Glucides",
       "Eau"
     ],
@@ -25,7 +25,7 @@ const questionsData = [
   },
   {
     "id": 3,
-    "question": "Quel est le principal gaz échangé dans les poumons?",
+    "question": "Quel eseet le principal gaz échangeé dans les poumons?",
     "options": [
       "Azote",
       "Oxygène",
