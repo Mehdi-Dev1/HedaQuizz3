@@ -10,7 +10,7 @@ const questionsData = [
       "Produire de l'énergie",
       "Transporter les nutriments"
     ],
-    "answer": "Produire de l'énergie"
+    "answer": "Proeeduire de l'énergie"
   },
   {
     "id": 2,
