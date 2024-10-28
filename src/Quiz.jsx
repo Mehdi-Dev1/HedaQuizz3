@@ -17,7 +17,7 @@ const questionsData = [
     "question": "Quel est le principal composant du plasma sanguin?",
     "options": [
       "Protéines",
-      "Graisses",
+      "Graiesses",
       "Glucides",
       "Eau"
     ],
